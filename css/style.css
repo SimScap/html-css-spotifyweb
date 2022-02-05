@@ -1,0 +1,74 @@
+/* Reset */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+}
+
+section aside.logo{
+    width: 20%;
+    height: 7vh;
+    border: 1px solid red; 
+}
+
+section aside.btn-upgrade{
+    width: 80%;
+    height: 7vh;
+    border: 1px solid gold;
+}
+
+main section.main-container{
+    height: 83vh;
+    width: 100%;
+    border: 1px solid black;
+    }
+
+main section aside.main-left{
+    width: 20%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+main section aside.main-center{
+    width: 80%;
+    height: 100%;
+    border: 1px solid cyan;
+}
+
+footer section.footer-main-container{
+    width: 100%;
+    height: 10vh;
+    border: 1px solid salmon;
+}
+
+main aside div.main-central-nav{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    justify-content: center;
+    
+}
+
+main aside div.main-central-nav a{
+    align-self: center;
+}
+
+main div.img-container{
+    width: 20%;
+    border: 1px solid darkblue;
+    flex-direction: column;
+}
+
+
+main section.card{
+    width: 100%;
+    border: 2px solid blueviolet;
+}
+
+h4,h6{
+    align-self: center;
+}
