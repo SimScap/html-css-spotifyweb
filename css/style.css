@@ -35,16 +35,24 @@ main section.logo-section{
     border: 1px solid red;
     background-color: black;
     flex-direction: column;
+    padding: 1rem;
+   
     
 }
 main section.logo-section img{
     width: 60%;
-    margin: .7rem;
+    margin-bottom: 1rem;
+    
 }
 main div.main-container{
     width: 100%;
-    height: 90%;
+    height: 5%;
     border: 1px solid aqua;
+}
+
+section span.fa-arrow-circle-down{
+    align-self: center;
+    margin-right: .3rem;
 }
 
 main section.banner-section{
@@ -55,31 +63,36 @@ main section.banner-section{
     height: calc(100vh - 100px);
     /* position: relative; */
 }
-main div.bottom-side{
+main section.bottom-side{
     border: 1px solid gold;
     width: 100%;
-    height: 10%;
+    height: 80px;
+
 }
 
 .special-ul{
     border: 1px solid blue;
     flex-direction: column;
     overflow-y: auto;
-    height: 60%;
+    height: 50%;
 }
-
+ul,.special-ul{
+    list-style: none;
+}
 i {
     color: white;
 }
-
 .fas{
     font-size: 1.2rem;
-    padding: .3rem 0 .3rem 1rem;
+    margin:0 .3rem .5rem 0;
+    color: white;
+}
+hr{
+    margin:.6rem 0 .6rem 0;
 }
 
-
 main section.card{
-    width: 100%;
+    /* width: 100%; */
     border: 2px solid blueviolet;
     flex-wrap: wrap;
     margin: 1rem auto;
@@ -128,146 +141,17 @@ main div.img-container img{
     margin-bottom: .3rem;
 }
 
+
+
 ul li{
     color: white;
+    margin-bottom: 1rem;
 }
 
 
 
 
 
-/* header aside.logo{
-    width: 250px;
-    height: 90vh;
-    border: 1px solid red; 
-    background-color: black;
-}
-header aside.logo img{
-    width: 8rem;
-    height: 2rem;
-}
-header aside.btn-upgrade{
-    width: 85%;
-    height: 7vh;
-    border: 1px solid gold;
-    background-color: rgb(16, 17, 22);
-    justify-content: flex-end;  
-    
-}
-header aside.btn-upgrade a{
-    align-self: center;
-    border: 2px solid white;
-    border-radius: 50px;
-    padding: 0.7rem 2rem;
-    text-decoration: none;
-}
-main section.main-container{
-    width: 100%;
-    height: 80vh;
-    border: 1px solid black;  
-    
-    }
-main section aside.main-center{
-    width: 100%;
-    height: 100%;
-    border: 1px solid cyan;
-    overflow-y: auto;
-    background-color: rgb(20, 25, 34);
-}
-
-main aside div.main-central-nav{
-    width: 100%;
-    height: 50px;
-    border: 1px solid black;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-    
-}
-main aside div.main-central-nav a{
-    align-self: center;
-    text-decoration: none;
-    margin: 0 2rem;
-}
-
-main div.img-container{
-    width: 200px;
-    border: 1px solid darkblue;
-    flex-direction: column;
-    border-right: 0.5rem solid rgb(20, 25, 34);
-}
-main section.card{
-    width: 90%;
-    border: 2px solid blueviolet;
-    flex-wrap: wrap;
-    margin: 1rem auto;
-    
-} */
-
-/* img{
-    width: 100%;
-    align-self: center;
-} */
-
-/* .main-title{
-    width: 100%;
-}
-
-section.container{
-    width: 100%;
-    height: 100%;
-    border: 2px solid purple;
-}
-
-
-
-
-
-footer section.footer-main-container{
-    width: 100%;
-    height:10vh;
-    border: 1px solid salmon;
-    background-color: rgb(34, 34, 34);
-}
-
-footer div.left-footer{
-    width: 250px;
-    height: 100%;
-    border: 1px solid blue;
-}
-footer div.footer-left-img{
-    flex-direction: column;
-    align-self: center;
-    padding-left: .7rem;
-
-}
-footer div.left-footer img{
-    width: 70px;
-    height: 50px;
-    padding-left: 0.5rem;
-}
-
-footer div.left-footer i{
-    align-self: center;
-
-}
-
-footer div.footer-left-elements{
-    justify-content: flex-end;
-    color: wheat;
-}
-
-footer div.central-footer{
-    width: 65%;
-    height: 100%;
-    border: 1px solid orange;
-}
-
-footer div.right-footer{
-    width: 20%;
-    height: 100%;
-    border: 1px solid green;
-} */
 
 
 
