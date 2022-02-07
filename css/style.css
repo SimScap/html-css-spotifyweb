@@ -22,7 +22,7 @@ h3{
     margin-bottom: 1rem;
 }
 header aside.logo{
-    width: 20%;
+    width: 250px;
     height: 90vh;
     border: 1px solid red; 
     background-color: black;
@@ -47,12 +47,13 @@ header aside.btn-upgrade a{
     text-decoration: none;
 }
 main section.main-container{
-    height: 83vh;
     width: 100%;
+    height: 80vh;
     border: 1px solid black;  
+    
     }
 main section aside.main-center{
-    width: 85%;
+    width: 100%;
     height: 100%;
     border: 1px solid cyan;
     overflow-y: auto;
@@ -97,8 +98,11 @@ main section.card{
     width: 100%;
 }
 
-
-
+section.container{
+    width: 100%;
+    height: 100%;
+    border: 2px solid purple;
+}
 
 
 
@@ -112,7 +116,7 @@ footer section.footer-main-container{
 }
 
 footer div.left-footer{
-    width: 20%;
+    width: 250px;
     height: 100%;
     border: 1px solid blue;
 }
