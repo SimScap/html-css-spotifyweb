@@ -21,18 +21,17 @@ h3{
     color: white;
     margin-bottom: 1rem;
 }
-section aside.logo{
+header aside.logo{
     width: 20%;
-    height: 7vh;
+    height: 90vh;
     border: 1px solid red; 
     background-color: black;
 }
-section aside.logo img{
+header aside.logo img{
     width: 8rem;
     height: 2rem;
-    margin: 0 1rem;
 }
-section aside.btn-upgrade{
+header aside.btn-upgrade{
     width: 85%;
     height: 7vh;
     border: 1px solid gold;
@@ -40,7 +39,7 @@ section aside.btn-upgrade{
     justify-content: flex-end;  
     
 }
-section aside.btn-upgrade a{
+header aside.btn-upgrade a{
     align-self: center;
     border: 2px solid white;
     border-radius: 50px;
@@ -50,15 +49,8 @@ section aside.btn-upgrade a{
 main section.main-container{
     height: 83vh;
     width: 100%;
-    border: 1px solid black;
-    
+    border: 1px solid black;  
     }
-main section aside.main-left{
-    width: 20%;
-    height: 100%;
-    border: 1px solid red;
-    background-color: black;
-}
 main section aside.main-center{
     width: 85%;
     height: 100%;
@@ -96,10 +88,10 @@ main section.card{
     
 }
 
-img{
+/* img{
     width: 100%;
     align-self: center;
-}
+} */
 
 .main-title{
     width: 100%;
@@ -114,7 +106,7 @@ img{
 
 footer section.footer-main-container{
     width: 100%;
-    height: 10vh;
+    height:10vh;
     border: 1px solid salmon;
     background-color: rgb(34, 34, 34);
 }
