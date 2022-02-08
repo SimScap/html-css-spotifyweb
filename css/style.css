@@ -124,9 +124,11 @@ footer section.footer{
 }
 footer div.side-footer{
     width: 20%;
+    max-width: 200px;
     height: 100%;
     border: 1px solid red;
     align-items: center;
+    justify-content: space-between;
 }
 footer div.side-footer img{
     width: 25%;
@@ -137,10 +139,7 @@ footer div.side-footer img{
 footer div.side-footer div{
     align-self: center;
 }
-footer div.side-footer i.fa-heart{
-    margin-left: 1.5rem;
-    
-}
+
 footer div.nav-footer{
     width: calc(100% - 40%);
     height: 100%;
