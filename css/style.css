@@ -33,11 +33,11 @@ main section.logo-section{
     border: 1px solid red;
     background-color: black;
     flex-direction: column;
-    padding: 1rem;
+    padding: .4rem;
 }
 main section.logo-section img{
     width: 60%;
-    margin-bottom: 1rem; 
+    margin-bottom: 2rem; 
 }
 main div.main-container{
     width: 100%;
@@ -54,19 +54,36 @@ main section.banner-section{
     background-color: rgb(16, 17, 22);
     overflow-y: auto;
     height: calc(100vh - 100px);
-    /* position: relative; */
+}
+main div.banner{
+    width: 100%;
+    border: 1px solid red;
+    height: 60px;
+    position: sticky;
+    top: 0;   
+    justify-content: flex-end;
+    background-color: black;
+}
+main div.banner a{
+    align-self: center;
+    text-decoration: none;
+    margin-right: 1rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: .5rem;
 }
 main section.bottom-side{
     border: 1px solid gold;
     width: 100%;
-    height: 80px;
-
 }
 .special-ul{
     border: 1px solid blue;
     flex-direction: column;
     overflow-y: auto;
     height: 50%;
+}
+.special-ul li{
+    color: gray;
 }
 ul,.special-ul{
     list-style: none;
@@ -80,10 +97,9 @@ i {
     color: white;
 }
 hr{
-    margin:.6rem 0 .6rem 0;
+    margin:.2rem 0 .6rem 0;
 }
 main section.card{
-    width: 100%;
     border: 2px solid blueviolet;
     flex-wrap: wrap;
     margin: 2rem auto;
@@ -109,6 +125,7 @@ main header a{
     text-decoration: none;
     margin: 0 1rem;
     font-size: .7rem;
+    color: gray;
 }
 main div.img-container img{
     margin-bottom: .3rem;
@@ -121,10 +138,10 @@ footer section.footer{
     width: 100%;
     height: 100px;
     border: 1px solid coral;
-    background-color: gray;
+    background-color: rgb(82, 81, 81);
 }
 footer div.side-footer{
-    width: 20%;
+    width: 200px;
     /* max-width: 200px; */
     height: 100%;
     border: 1px solid red;
@@ -135,13 +152,13 @@ footer div.side-footer i{
     margin: .4rem;
 }
 footer div.side-footer img{
-    width: 25%;
+    width: 50px;
     height: 50%;
     align-self: center;
     padding: .4rem;
 }
 footer div.nav-footer{
-    width: calc(100% - 40%);
+    width: calc(100% - 400px);
     height: 100%;
     border: 1px solid blue;
     padding: .5rem;
@@ -159,7 +176,7 @@ footer div.nav-footer-player{
 footer span.loading-bar{
     width: 100%;
     height: 10px;
-    background-color: green;
+    background-color: gray;
     align-self: center;
     margin: 0 .5rem 0 .5rem;
     border-radius: 20px;
@@ -167,22 +184,52 @@ footer span.loading-bar{
 footer span.flex{
     justify-content: space-evenly;
 }
-
 .fa-play-circle{
     font-size: 1.5rem;
+}
+.radius{
+    border-radius: 50%;
 }
 
 /* TABLET */
 @media screen and (max-width: 760px){
     main div.img-container{
-        width: 20%;
+        width: 30%;
         border: 1px solid darkblue;
         flex-direction: column;
         margin-right: .7rem;
     }
-  
+}
+/* MOBILE SMALL */
+@media  screen and (max-width: 576px){
+    main div.img-container{
+        width: 40%;
+        border: 1px solid darkblue;
+        flex-direction: column;
+        margin-right: .7rem;
+    }
+
 }
 
+/* MOBILE X SMALL */
+@media screen and (max-width: 460px){
+    main section.logo-section{
+        width: 100px;
+        height: calc(100vh - 100px);
+        border: 1px solid red;
+        background-color: black;
+        flex-direction: column;
+        padding: .4rem;
+    }
+    main section.banner-section{
+        width:calc(100% - 100px);
+        border: 1px solid green;
+        background-color: rgb(16, 17, 22);
+        overflow-y: auto;
+        height: calc(100vh - 100px);
+    }
+
+}
 
 
 
