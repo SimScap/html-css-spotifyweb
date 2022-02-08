@@ -95,7 +95,7 @@ main section.card{
     /* width: 100%; */
     border: 2px solid blueviolet;
     flex-wrap: wrap;
-    margin: 1rem auto;
+    margin: 2rem auto;
     
 }
 main div.main-title{
@@ -123,11 +123,10 @@ footer section.footer{
     background-color: gray;
 }
 footer div.side-footer{
-    width: 200px;
+    width: 20%;
     height: 100%;
     border: 1px solid red;
- 
-
+    align-items: center;
 }
 footer div.side-footer img{
     width: 25%;
@@ -143,14 +142,32 @@ footer div.side-footer i.fa-heart{
     
 }
 footer div.nav-footer{
-    width: calc(100% - 400px);
+    width: calc(100% - 40%);
     height: 100%;
     border: 1px solid blue;
+    padding: .5rem;
+}
+footer div.nav-footer i{
+    margin: .3rem .5rem .3rem .5rem;
+}
+footer div.nav-footer-player{
+    height: 40px;
+    border:1px solid crimson;
+    width: 90%;
+    margin: 0 auto;
     justify-content: center;
-
+  
+}
+footer span.loading-bar{
+    width: 100%;
+    height: 10px;
+    background-color: green;
+    align-self: center;
 }
 
-
+footer span.flex{
+    justify-content: space-evenly;
+}
 
 main header{
     width: 100%;
