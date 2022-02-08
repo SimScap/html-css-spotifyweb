@@ -14,7 +14,6 @@ main h6{
     align-self: center;
     color: white;
     margin-bottom: .3rem;
-   
 }
 span{
     color: white;
@@ -22,8 +21,7 @@ span{
 main h5{
     align-self: center;
     color: white;
-    margin-bottom: .3rem;
-   
+    margin-bottom: .3rem; 
 }
 h3{
     color: white;
@@ -36,25 +34,20 @@ main section.logo-section{
     background-color: black;
     flex-direction: column;
     padding: 1rem;
-   
-    
 }
 main section.logo-section img{
     width: 60%;
-    margin-bottom: 1rem;
-    
+    margin-bottom: 1rem; 
 }
 main div.main-container{
     width: 100%;
     height: 10%;
     border: 1px solid aqua;
 }
-
 section span.fa-arrow-circle-down{
     align-self: center;
     margin-right: .3rem;
 }
-
 main section.banner-section{
     width:calc(100% - 200px);
     border: 1px solid green;
@@ -69,7 +62,6 @@ main section.bottom-side{
     height: 80px;
 
 }
-
 .special-ul{
     border: 1px solid blue;
     flex-direction: column;
@@ -90,32 +82,41 @@ i {
 hr{
     margin:.6rem 0 .6rem 0;
 }
-
 main section.card{
-    /* width: 100%; */
+    width: 100%;
     border: 2px solid blueviolet;
     flex-wrap: wrap;
     margin: 2rem auto;
-    
 }
 main div.main-title{
     width: 100%;
 }
 main div.img-container{
-    width: 15%;
+    width: 13%;
     border: 1px solid darkblue;
     flex-direction: column;
     margin-right: .7rem;
 }
-   
-/* 
-main section div.banner{
+main header{
     width: 100%;
-    height: 60px;
-    background-color: grey;
-    position: fixed;
-} */
-
+    height:50px;
+    border: 1px solid purple;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main header a{
+    align-self: center;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: .7rem;
+}
+main div.img-container img{
+    margin-bottom: .3rem;
+}
+ul li{
+    color: white;
+    margin-bottom: 1rem;
+}
 footer section.footer{
     width: 100%;
     height: 100px;
@@ -124,11 +125,14 @@ footer section.footer{
 }
 footer div.side-footer{
     width: 20%;
-    max-width: 200px;
+    /* max-width: 200px; */
     height: 100%;
     border: 1px solid red;
     align-items: center;
     justify-content: space-between;
+}
+footer div.side-footer i{
+    margin: .4rem;
 }
 footer div.side-footer img{
     width: 25%;
@@ -136,10 +140,6 @@ footer div.side-footer img{
     align-self: center;
     padding: .4rem;
 }
-footer div.side-footer div{
-    align-self: center;
-}
-
 footer div.nav-footer{
     width: calc(100% - 40%);
     height: 100%;
@@ -147,7 +147,7 @@ footer div.nav-footer{
     padding: .5rem;
 }
 footer div.nav-footer i{
-    margin: .3rem .5rem .3rem .5rem;
+    margin: .3rem .8rem .3rem .8rem;
 }
 footer div.nav-footer-player{
     height: 40px;
@@ -155,45 +155,33 @@ footer div.nav-footer-player{
     width: 90%;
     margin: 0 auto;
     justify-content: center;
-  
 }
 footer span.loading-bar{
     width: 100%;
     height: 10px;
     background-color: green;
     align-self: center;
+    margin: 0 .5rem 0 .5rem;
+    border-radius: 20px;
 }
-
 footer span.flex{
     justify-content: space-evenly;
 }
 
-main header{
-    width: 100%;
-    height:50px;
-    border: 1px solid purple;
-    justify-content: center;
-    flex-wrap: wrap;
+.fa-play-circle{
+    font-size: 1.5rem;
 }
 
-main header a{
-    align-self: center;
-    text-decoration: none;
-    margin: 0 1rem;
+/* TABLET */
+@media screen and (max-width: 760px){
+    main div.img-container{
+        width: 20%;
+        border: 1px solid darkblue;
+        flex-direction: column;
+        margin-right: .7rem;
+    }
+  
 }
-
-main div.img-container img{
-    margin-bottom: .3rem;
-}
-
-
-
-ul li{
-    color: white;
-    margin-bottom: 1rem;
-}
-
-
 
 
 
