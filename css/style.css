@@ -10,27 +10,19 @@ body{
 .flex{
     display: flex;
 }
-main h6{
-    align-self: center;
-    color: white;
+main h6,
+main h5{
     margin-bottom: .3rem;
 }
-span{
+span,h5,h6,h3{
     color: white;
-}
-main h5{
-    align-self: center;
-    color: white;
-    margin-bottom: .3rem; 
 }
 h3{
-    color: white;
-    margin-bottom: .5rem;
+    margin: 1rem 0 1rem 0;
 }  
 main section.logo-section{
     width: 200px;
     height: calc(100vh - 100px);
-    border: 1px solid red;
     background-color: black;
     flex-direction: column;
     padding: .4rem;
@@ -44,12 +36,11 @@ main section.logo-section ul:first-of-type{
 }
 main section.logo-section span{
     font-size: 1rem;
-    padding: 1rem;
+    padding: .5rem;
 }
 main div.main-container{
     width: 100%;
     height: 10%;
-    border: 1px solid aqua;
 }
 section span.fa-arrow-circle-down{
     align-self: center;
@@ -57,19 +48,18 @@ section span.fa-arrow-circle-down{
 }
 main section.banner-section{
     width:calc(100% - 200px);
-    border: 1px solid green;
     background-color: rgb(16, 17, 22);
     overflow-y: auto;
     height: calc(100vh - 100px);
 }
 main div.banner{
     width: 100%;
-    border: 1px solid red;
     height: 60px;
     position: sticky;
     top: 0;   
     justify-content: flex-end;
-    background-color: black;
+    background-color: rgb(17, 19, 23);
+    z-index: 2;
 }
 main div.banner a{
     align-self: center;
@@ -80,10 +70,8 @@ main div.banner a{
     padding: .5rem;
 }
 main section.bottom-side{
-    border: 1px solid gold;
     width: 100%;
 }
-
 ul,.special-ul{
     list-style: none;
 }
@@ -95,11 +83,13 @@ i {
     margin:0 .3rem .5rem 0;
     color: white;
 }
+.img{
+    width: 100%;
+}
 hr{
     margin:.2rem 0 .6rem 0;
 }
 main section.card{
-    border: 2px solid blueviolet;
     flex-wrap: wrap;
     margin: 2rem auto;
     
@@ -113,9 +103,12 @@ main div.img-container{
     flex-direction: column;
     position: relative;
     padding: .5rem;
+    text-align: center;
+    z-index: 0;
 }
 main div.img-container:hover img{
     opacity: 0.3;
+
 }
 main div.img-container:hover .middle{
     opacity: 1;
@@ -123,8 +116,8 @@ main div.img-container:hover .middle{
 .middle {
     opacity: 0;
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 50%;
+    left: 50%; 
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
@@ -132,7 +125,6 @@ main div.img-container:hover .middle{
 main header{
     width: 100%;
     height:50px;
-    border: 1px solid purple;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -145,12 +137,14 @@ main header a{
 }
 main div.img-container img{
     margin-bottom: .3rem;
+    border: 2px solid greenyellow;
+    
 }
 main span.vertical{
     vertical-align: super;
 }
 main div.fa-play-circle{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 ul li{
     color: white;
@@ -159,13 +153,11 @@ ul li{
 footer section.footer{
     width: 100%;
     height: 100px;
-    border: 1px solid coral;
     background-color: rgb(82, 81, 81);
 }
 footer div.side-footer{
     width: 200px;
     height: 100%;
-    border: 1px solid red;
     align-items: center;
     justify-content: space-between;
     flex-shrink: 0;
@@ -182,7 +174,6 @@ footer div.side-footer img{
 footer div.nav-footer{
     width: calc(100% - 400px);
     height: 100%;
-    border: 1px solid blue;
     padding: .5rem;
     min-width: 50vw;
 }
@@ -191,7 +182,6 @@ footer div.nav-footer i{
 }
 footer div.nav-footer-player{
     height: 40px;
-    border:1px solid crimson;
     width: 90%;
     margin: 0 auto;
     justify-content: center;
@@ -203,15 +193,16 @@ footer span.loading-bar{
     align-self: center;
     margin: 0 .5rem 0 .5rem;
     border-radius: 20px;
+    
 }
 footer span.flex{
     justify-content: space-evenly;
+    justify-content: flex-start;
 }
 footer i.fa-play-circle{
     font-size: 1.5rem;
 }
 .special-ul{
-    border: 1px solid blue;
     flex-direction: column;
     overflow-y: auto;
     height: 80%;
@@ -224,21 +215,26 @@ footer i.fa-play-circle{
 }
 
 .progress{
-    background-color: green;
-    border: 2px solid green;
-    height: 100%;
     width: 20%;
+    border: 1px solid green; 
+    background-color: green;   
     border-radius: 20px;
+
 }
+
 
 /* TABLET */
 @media screen and (max-width: 760px){
+
     main div.img-container{
         width: calc(100% / 4);
         border: 1px solid darkblue;
         flex-direction: column;
         position: relative;
         padding: .5rem;
+    }
+    main div.fa-play-circle{
+        font-size: 2rem;
     }
     
 }
@@ -250,6 +246,9 @@ footer i.fa-play-circle{
         flex-direction: column;
         position: relative;
         padding: .5rem;
+    }
+    main div.fa-play-circle{
+        font-size: 2rem;
     }
 
 }
@@ -288,11 +287,13 @@ footer i.fa-play-circle{
         height: calc(100vh - 100px);
     }
     main section.logo-section img{
-        width: 100%;
-        margin-bottom: 2rem; 
+        width: 40px; 
     }
     main div.fa-play-circle{
         font-size: 2rem;
+    }
+    .xs-utility{
+        flex-direction: column; 
     }
     
     .special-ul li,
