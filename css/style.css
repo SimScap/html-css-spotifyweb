@@ -23,6 +23,10 @@ span,h5,h3{
 h3{
     margin: 1rem 0 1rem 0;
 }  
+span.vertical,.fa-plus-square:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 main section.logo-section{
     width: 200px;
     height: calc(100vh - 100px);
@@ -221,6 +225,7 @@ footer span.progress:hover{
 }
 footer span.progress:hover .progress-point{
     display: block;
+    cursor: grab;
 }
 .special-ul{
     flex-direction: column;
@@ -229,6 +234,10 @@ footer span.progress:hover .progress-point{
 }
 .special-ul li{
     color: gray;
+}
+.special-ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 .radius{
     border-radius: 50%;
