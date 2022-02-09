@@ -202,6 +202,29 @@ footer span.flex{
 footer i.fa-play-circle{
     font-size: 1.5rem;
 }
+footer span.progress{
+    width: 20%;
+    background-color: rgb(199, 195, 195);   
+    border-radius: 20px;
+    position: relative;
+}
+footer div.progress-point{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 20px;
+    right: 0px;
+    display: none;
+}
+
+footer span.progress:hover{
+    background-color: green;
+}
+footer span.progress:hover .progress-point{
+    display: block;
+}
 .special-ul{
     flex-direction: column;
     overflow-y: auto;
@@ -214,13 +237,6 @@ footer i.fa-play-circle{
     border-radius: 50%;
 }
 
-.progress{
-    width: 20%;
-    border: 1px solid green; 
-    background-color: green;   
-    border-radius: 20px;
-
-}
 
 
 /* TABLET */
