@@ -239,7 +239,6 @@ footer span.progress:hover .progress-point{
 
     main div.img-container{
         width: calc(100% / 4);
-        
         flex-direction: column;
         position: relative;
         padding: .5rem;
@@ -247,13 +246,45 @@ footer span.progress:hover .progress-point{
     main div.fa-play-circle{
         font-size: 2rem;
     }
+    footer div.nav-footer{
+        width: calc(100% - 50%);
+        height: 100%;
+        padding: .2rem;
+    }
+    footer div.nav-footer .fas{
+        margin-top: 1rem;
+    }
+    footer i.fa-play-circle{
+        padding-top: .5rem;
+    }
+    footer .fas{
+        font-size: .6rem;
+    }
+    footer div.side-footer{
+        width: 25%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+    }
+    footer span.loading-bar{
+        width: 100%;
+        height: 10px;
+        background-color: gray;
+        align-self: center;
+        margin: 0 .5rem 0 .5rem;
+        border-radius: 20px;
+    }
+    footer i.fa-play-circle{
+        font-size: 1rem;
+    }
+
     
 }
 /* MOBILE SMALL */
 @media  screen and (max-width: 576px){
     main div.img-container{
-        width: calc(100% / 2);
-        
+        width: calc(100% / 2);        
         flex-direction: column;
         position: relative;
         padding: .5rem;
@@ -261,29 +292,27 @@ footer span.progress:hover .progress-point{
     main div.fa-play-circle{
         font-size: 2rem;
     }
+
 
 }
 
 /* MOBILE X SMALL */
 @media screen and (max-width: 460px){
     main div.img-container{
-        width: calc(100% / 2);
-        
+        width: calc(100% / 2);        
         flex-direction: column;
         position: relative;
         padding: .5rem;
     }
     main section.logo-section{
         width: 50px;
-        height: calc(100vh - 100px);
-        
+        height: calc(100vh - 100px);       
         background-color: black;
         flex-direction: column;
         padding: .4rem;
         align-items: center;
     }
-    main section.bottom-side{
-     
+    main section.bottom-side{     
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -332,6 +361,12 @@ footer span.progress:hover .progress-point{
     footer i.fa-play-circle{
         font-size: 1rem;
     }
+    footer div.nav-footer .fas{
+        margin-top: 1rem;
+    }
+    footer i.fa-play-circle{
+        padding-top: .5rem;
+    }
     main section.logo-section img{
         width: 60%;
         margin-bottom: 2rem; 
@@ -339,13 +374,11 @@ footer span.progress:hover .progress-point{
         color: white;
     }
     div.logo-xs{
-        width: 80%;
+        width: 70%;
         height: 5%;
-        border: 1px solid white;
         background-image: url(../img/logo-small.svg);
         background-repeat: no-repeat;
     }
-    
     
     .special-ul li,
     main section.logo-section h3,
