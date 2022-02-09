@@ -117,8 +117,20 @@ main div.img-container{
 }
 main div.img-container:hover img{
     opacity: 0.3;
-
 }
+main div.img-container:hover .middle{
+    opacity: 1;
+}
+.middle {
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+
 
 main header{
     width: 100%;
