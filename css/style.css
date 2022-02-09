@@ -39,6 +39,13 @@ main section.logo-section img{
     width: 60%;
     margin-bottom: 2rem; 
 }
+main section.logo-section ul:first-of-type{
+    flex-direction: column;
+}
+main section.logo-section span{
+    font-size: 1rem;
+    padding: 1rem;
+}
 main div.main-container{
     width: 100%;
     height: 10%;
@@ -76,15 +83,7 @@ main section.bottom-side{
     border: 1px solid gold;
     width: 100%;
 }
-.special-ul{
-    border: 1px solid blue;
-    flex-direction: column;
-    overflow-y: auto;
-    height: 80%;
-}
-.special-ul li{
-    color: gray;
-}
+
 ul,.special-ul{
     list-style: none;
 }
@@ -103,17 +102,17 @@ main section.card{
     border: 2px solid blueviolet;
     flex-wrap: wrap;
     margin: 2rem auto;
-    padding-left: 1rem;
+    
 }
 main div.main-title{
     width: 100%;
 }
 main div.img-container{
-    width: 13%;
+    width: calc(100% / 6);
     border: 1px solid darkblue;
     flex-direction: column;
-    margin-right: .7rem;
     position: relative;
+    padding: .5rem;
 }
 main div.img-container:hover img{
     opacity: 0.3;
@@ -129,9 +128,7 @@ main div.img-container:hover .middle{
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-  }
-
-
+}
 main header{
     width: 100%;
     height:50px;
@@ -152,6 +149,9 @@ main div.img-container img{
 main span.vertical{
     vertical-align: super;
 }
+main div.fa-play-circle{
+    font-size: 4rem;
+}
 ul li{
     color: white;
     margin-bottom: 1rem;
@@ -164,11 +164,11 @@ footer section.footer{
 }
 footer div.side-footer{
     width: 200px;
-    /* max-width: 200px; */
     height: 100%;
     border: 1px solid red;
     align-items: center;
     justify-content: space-between;
+    flex-shrink: 0;
 }
 footer div.side-footer i{
     margin: .4rem;
@@ -207,8 +207,17 @@ footer span.loading-bar{
 footer span.flex{
     justify-content: space-evenly;
 }
-.fa-play-circle{
+footer i.fa-play-circle{
     font-size: 1.5rem;
+}
+.special-ul{
+    border: 1px solid blue;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 80%;
+}
+.special-ul li{
+    color: gray;
 }
 .radius{
     border-radius: 50%;
@@ -225,19 +234,22 @@ footer span.flex{
 /* TABLET */
 @media screen and (max-width: 760px){
     main div.img-container{
-        width: 30%;
+        width: calc(100% / 4);
         border: 1px solid darkblue;
         flex-direction: column;
-        margin-right: .7rem;
+        position: relative;
+        padding: .5rem;
     }
+    
 }
 /* MOBILE SMALL */
 @media  screen and (max-width: 576px){
     main div.img-container{
-        width: 40%;
+        width: calc(100% / 2);
         border: 1px solid darkblue;
         flex-direction: column;
-        margin-right: .7rem;
+        position: relative;
+        padding: .5rem;
     }
 
 }
@@ -245,38 +257,52 @@ footer span.flex{
 /* MOBILE X SMALL */
 @media screen and (max-width: 460px){
     main div.img-container{
-        width: 45%;
+        width: calc(100% / 2);
         border: 1px solid darkblue;
         flex-direction: column;
-        margin-right: .7rem;
+        position: relative;
+        padding: .5rem;
     }
     main section.logo-section{
-        width: 100px;
+        width: 50px;
         height: calc(100vh - 100px);
         border: 1px solid red;
         background-color: black;
         flex-direction: column;
         padding: .4rem;
+        align-items: center;
+    }
+    main section.bottom-side{
+        border: 1px solid gold;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
     }
     main section.banner-section{
-        width:calc(100% - 100px);
+        width:calc(100% - 50px);
         border: 1px solid green;
         background-color: rgb(16, 17, 22);
         overflow-y: auto;
         height: calc(100vh - 100px);
     }
-
-    main li{
-        display: none;
+    main section.logo-section img{
+        width: 100%;
+        margin-bottom: 2rem; 
     }
-
-
-
-    span.vertical,
-    main section.logo-section li,
-    main section.logo-section h3{
-        display: none;
+    main div.fa-play-circle{
+        font-size: 2rem;
     }
+    
+    .special-ul li,
+    main section.logo-section h3,
+    section.bottom-side span,
+    main section.logo-section span,
+    ul li.fa-plus-square{      
+        display: none;
+    }   
+}  
 
 
 
