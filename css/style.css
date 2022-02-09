@@ -99,7 +99,6 @@ main div.main-title{
 }
 main div.img-container{
     width: calc(100% / 6);
-    border: 1px solid darkblue;
     flex-direction: column;
     position: relative;
     padding: .5rem;
@@ -137,8 +136,6 @@ main header a{
 }
 main div.img-container img{
     margin-bottom: .3rem;
-    border: 2px solid greenyellow;
-    
 }
 main span.vertical{
     vertical-align: super;
@@ -175,7 +172,6 @@ footer div.nav-footer{
     width: calc(100% - 400px);
     height: 100%;
     padding: .5rem;
-    min-width: 50vw;
 }
 footer div.nav-footer i{
     margin: .3rem .8rem .3rem .8rem;
@@ -193,7 +189,6 @@ footer span.loading-bar{
     align-self: center;
     margin: 0 .5rem 0 .5rem;
     border-radius: 20px;
-    
 }
 footer span.flex{
     justify-content: space-evenly;
@@ -244,7 +239,7 @@ footer span.progress:hover .progress-point{
 
     main div.img-container{
         width: calc(100% / 4);
-        border: 1px solid darkblue;
+        
         flex-direction: column;
         position: relative;
         padding: .5rem;
@@ -258,7 +253,7 @@ footer span.progress:hover .progress-point{
 @media  screen and (max-width: 576px){
     main div.img-container{
         width: calc(100% / 2);
-        border: 1px solid darkblue;
+        
         flex-direction: column;
         position: relative;
         padding: .5rem;
@@ -273,7 +268,7 @@ footer span.progress:hover .progress-point{
 @media screen and (max-width: 460px){
     main div.img-container{
         width: calc(100% / 2);
-        border: 1px solid darkblue;
+        
         flex-direction: column;
         position: relative;
         padding: .5rem;
@@ -281,14 +276,14 @@ footer span.progress:hover .progress-point{
     main section.logo-section{
         width: 50px;
         height: calc(100vh - 100px);
-        border: 1px solid red;
+        
         background-color: black;
         flex-direction: column;
         padding: .4rem;
         align-items: center;
     }
     main section.bottom-side{
-        border: 1px solid gold;
+     
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -297,7 +292,7 @@ footer span.progress:hover .progress-point{
     }
     main section.banner-section{
         width:calc(100% - 50px);
-        border: 1px solid green;
+        
         background-color: rgb(16, 17, 22);
         overflow-y: auto;
         height: calc(100vh - 100px);
@@ -311,12 +306,41 @@ footer span.progress:hover .progress-point{
     .xs-utility{
         flex-direction: column; 
     }
+    footer div.nav-footer{
+        width: calc(100% - 50%);
+        height: 100%;
+        padding: .2rem;
+    }
+    footer .fas{
+        font-size: .6rem;
+    }
+    footer div.side-footer{
+        width: 25%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+    }
+    footer span.loading-bar{
+        width: 100%;
+        height: 10px;
+        background-color: gray;
+        align-self: center;
+        margin: 0 .5rem 0 .5rem;
+        border-radius: 20px;
+    }
+    footer i.fa-play-circle{
+        font-size: 1rem;
+    }
+   
+    
     
     .special-ul li,
     main section.logo-section h3,
     section.bottom-side span,
     main section.logo-section span,
-    ul li.fa-plus-square{      
+    ul li.fa-plus-square,
+    hr{      
         display: none;
     }   
 }  
