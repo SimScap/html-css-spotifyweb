@@ -332,7 +332,19 @@ footer span.progress:hover .progress-point{
     footer i.fa-play-circle{
         font-size: 1rem;
     }
-   
+    main section.logo-section img{
+        width: 60%;
+        margin-bottom: 2rem; 
+        display: none;
+        color: white;
+    }
+    div.logo-xs{
+        width: 80%;
+        height: 5%;
+        border: 1px solid white;
+        background-image: url(../img/logo-small.svg);
+        background-repeat: no-repeat;
+    }
     
     
     .special-ul li,
