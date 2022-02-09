@@ -10,11 +10,14 @@ body{
 .flex{
     display: flex;
 }
+h6{
+    color: gray;
+}
 main h6,
 main h5{
     margin-bottom: .3rem;
 }
-span,h5,h6,h3{
+span,h5,h3{
     color: white;
 }
 h3{
@@ -213,7 +216,6 @@ footer div.progress-point{
     right: 0px;
     display: none;
 }
-
 footer span.progress:hover{
     background-color: green;
 }
@@ -236,7 +238,6 @@ footer span.progress:hover .progress-point{
 
 /* TABLET */
 @media screen and (max-width: 760px){
-
     main div.img-container{
         width: calc(100% / 4);
         flex-direction: column;
@@ -277,9 +278,13 @@ footer span.progress:hover .progress-point{
     }
     footer i.fa-play-circle{
         font-size: 1rem;
+    }   
+    h5{
+        font-size: .7rem;
     }
-
-    
+    h6{
+        font-size: .5rem;
+    }
 }
 /* MOBILE SMALL */
 @media  screen and (max-width: 576px){
@@ -292,10 +297,7 @@ footer span.progress:hover .progress-point{
     main div.fa-play-circle{
         font-size: 2rem;
     }
-
-
 }
-
 /* MOBILE X SMALL */
 @media screen and (max-width: 460px){
     main div.img-container{
@@ -316,12 +318,10 @@ footer span.progress:hover .progress-point{
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        
+        align-items: center;  
     }
     main section.banner-section{
-        width:calc(100% - 50px);
-        
+        width:calc(100% - 50px);   
         background-color: rgb(16, 17, 22);
         overflow-y: auto;
         height: calc(100vh - 100px);
@@ -379,7 +379,6 @@ footer span.progress:hover .progress-point{
         background-image: url(../img/logo-small.svg);
         background-repeat: no-repeat;
     }
-    
     .special-ul li,
     main section.logo-section h3,
     section.bottom-side span,
