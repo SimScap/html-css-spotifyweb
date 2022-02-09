@@ -80,7 +80,7 @@ main section.bottom-side{
     border: 1px solid blue;
     flex-direction: column;
     overflow-y: auto;
-    height: 50%;
+    height: 80%;
 }
 .special-ul li{
     color: gray;
@@ -103,6 +103,7 @@ main section.card{
     border: 2px solid blueviolet;
     flex-wrap: wrap;
     margin: 2rem auto;
+    padding-left: 1rem;
 }
 main div.main-title{
     width: 100%;
@@ -129,6 +130,9 @@ main header a{
 }
 main div.img-container img{
     margin-bottom: .3rem;
+}
+main span.vertical{
+    vertical-align: super;
 }
 ul li{
     color: white;
@@ -162,6 +166,7 @@ footer div.nav-footer{
     height: 100%;
     border: 1px solid blue;
     padding: .5rem;
+    min-width: 50vw;
 }
 footer div.nav-footer i{
     margin: .3rem .8rem .3rem .8rem;
@@ -191,6 +196,14 @@ footer span.flex{
     border-radius: 50%;
 }
 
+.progress{
+    background-color: green;
+    border: 2px solid green;
+    height: 100%;
+    width: 20%;
+    border-radius: 20px;
+}
+
 /* TABLET */
 @media screen and (max-width: 760px){
     main div.img-container{
@@ -213,6 +226,12 @@ footer span.flex{
 
 /* MOBILE X SMALL */
 @media screen and (max-width: 460px){
+    main div.img-container{
+        width: 45%;
+        border: 1px solid darkblue;
+        flex-direction: column;
+        margin-right: .7rem;
+    }
     main section.logo-section{
         width: 100px;
         height: calc(100vh - 100px);
@@ -229,7 +248,18 @@ footer span.flex{
         height: calc(100vh - 100px);
     }
 
-}
+    main li{
+        display: none;
+    }
+
+
+
+    span.vertical,
+    main section.logo-section li,
+    main section.logo-section h3{
+        display: none;
+    }
+
 
 
 
